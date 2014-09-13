@@ -1,0 +1,23 @@
+{
+  "name": "carlbot-derby",
+  "version": "0.0.0",
+  "description": "Website for carlbot olympics",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kneumei/carlbot-derby.git"
+  },
+  "author": "Kyle Neumeier",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/kneumei/carlbot-derby/issues"
+  },
+  "homepage": "https://github.com/kneumei/carlbot-derby",
+  "dependencies": {
+    "jade": "~1.6.0",
+    "express": "~4.9.0"
+  }
+}
