@@ -7,12 +7,30 @@ block content
 
 	#header
 		.jumbotron
+			h3
+				.fa.fa-calendar 
+				span December 6 2014
+			h3
+				.fa.fa-map-marker 
+				span Innovation Hub, North Little Rock AR						
 			h1 CARLBot Olympics
 			.container-fluid
-				.col-md-6 
-					p A hackathon for robot makers in Arkansas
-				.col-md-4
-					p December 6 2014
+				.row
+					.col-lg-12 
+						h2 A hackathon for robot makers in Arkansas
+				.row
+					.col-lg-4.col-lg-offset-4.col-md-6.col-md-offset-3.col-sm-8.col-sm-offset-2.col-xs-12.centered
+						form#mc-embedded-subscribe-form.validate.form(
+								action="//twitter.us9.list-manage.com/subscribe/post?u=2650d8ed002698f784a79c035&amp;id=288bef5d05"  
+								method="post" name="mc-embedded-subscribe-form" target="_blank" novalidate)
+							.form-group.form-inline.input-group.input-group-lg
+								input#mce-EMAIL.form-control.required(type="email" value="" name="EMAIL" 
+									placeholder="email address" required)
+								.input-group-btn
+									button#mc-embedded-subscribe.btn.btn-lg(type="submit" value="Subscribe" name="subscribe" )
+										i.fa.fa-envelope.fa-lg
+										span Subscribe
+
 	#content
 		.container
 			.row
@@ -21,7 +39,7 @@ block content
 						.title-bar 
 							.title What is it?
 						.content 
-							span The CARLbot olympics is an all-day hackathon-style event where attendees design, build, and program a robot to compete in events. 
+							span A hackathon where attendees design, build, and program a robot to compete in events. 
 				.col-md-4
 					.info-box
 						.title-bar 
@@ -33,14 +51,50 @@ block content
 						.title-bar 
 							.title What's a CARLBot?
 						.content 
-							span  Software developers, engineers, hobbyists, and anyone with a knack for making things
+							span  CARLbot (Challenge Arkansas Robotics League) is an inexpensive, arduino-based robotics platform being developed by the Innovation Hub with the aim of capturing the immagination of children throughout Arkansas. 
+	#content-2
+		.container
 			.row
-				.col-md-8
+				.col-md-12
 					.info-box
 						.title-bar
 							.title How does it work?
 						.content
-							span Attendees will sign up either individually or in teams of two or three. The cost of the ticket includes the CARLbot kit, access to all kinds of parts, sensors, and tools during the day of the event, lunch, and a t-shirt. Proceeds will benefit the Rock City Robots -- the FIRST robotics team that is sponsoring the event. 
+							.row.info-row
+								.col-lg-1
+									.fa.fa-users.fa-3x
+								.col-lg-4
+									div Attendees will sign up either individually or in teams of two or three. 
+
+								.col-lg-1.col-lg-offset-2
+									.fa.fa-ticket.fa-3x
+								.col-lg-4
+									div The cost of the ticket includes the CARLbot kit, access to all kinds of parts, sensors, and tools during the day of the event, lunch, and a t-shirt.
+							.row.info-row
+								.col-lg-1
+									.fa.fa-wrench.fa-3x
+								.col-lg-4
+									div The day of the hackathon, teams show up and hack away. Teams can compete in as many or as few events as they want to throughout the day.
 
 
+								.col-lg-1.col-lg-offset-2
+									.fa.fa-trophy.fa-3x
+								.col-lg-4
+									div Proceeds will benefit the Rock City Robots -- the FIRST robotics team that is sponsoring the event. 
+	#content-3
+		.container
+			.row
+				.col-md-12
+					.info-box
+						.title-bar
+							.title A huge thanks to our sponsors!
+			.row
+				.col-md-12
+					h2.text-center Interested in sponsoring our event? <a href="mailto:kneumei@gmail.com">Contact us</a>!
+			.sponsor-container
+				a(href="http://www.arhub.org/")
+					img(src="public/img/Innovation-Hub-Logo.png")
 
+			.sponsor-container
+				a(href="http://www.rockcityrobots.com/")
+					img(src="public/img/rock-city-robots-logo.png" style="background-color:black")

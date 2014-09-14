@@ -2,8 +2,10 @@ html{background-color: lightgray; color:black;}
 body { font-family: 'Roboto', sans-serif; font-weight: 600; font-style: normal; }
 
 #header {font-family: 'Ubuntu', sans-serif; color: lightgray}
-#header h1{font-size: 100px; text-transform: uppercase; line-height: 100px; margin-bottom: 25px;}
-#header h2{font-size: 50px; line-height: 100px; margin-bottom: 10px;}
+#header h1{font-size: 8em; text-transform: uppercase; line-height: 100px; margin-bottom: 25px;}
+#header h2{font-size: 2.5em;  margin-bottom: 10px;}
+#header h3{display: inline-block; margin: 10px}
+#header h3 span{margin-left: 10px}
 
 #header .jumbotron{
 	background: url(../img/bg.png) center top no-repeat;
@@ -15,12 +17,36 @@ body { font-family: 'Roboto', sans-serif; font-weight: 600; font-style: normal; 
 	padding-bottom: 50px
 }
 
-#content{
+#header {text-align: center}
+
+#mc-embedded-subscribe-form{ margin-top: 20px; }
+#mce-EMAIL{ display: inline-block; margin-right: 20px}
+#mc-embedded-subscribe i { margin-right: 10px}
+#mc-embedded-subscribe.btn {background-color: forestgreen}
+
+
+#content{ padding-top: 50px; padding-bottom: 50px; background-color: lightgray; color:black;}
+
+#content-2{background: url(../img/bg2.png) center top no-repeat;
+	-webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; 
+	background-size: cover; background-attachment: fixed; 
+	overflow:hidden; margin-bottom: 0px;
+	color:#fff;
 	padding-top: 50px;
-	background-color: lightgray;
-	color:black;
+	padding-bottom: 50px
 }
 
-.info-box .title-bar {background-color: darksalmon; display: block; margin-top: 10px; padding: 10px; border-radius: 20px}
-.info-box .title{ font-size: 3em; text-align: center}
+#content-3{ padding-top: 50px; padding-bottom: 50px; background-color: white; color:black;}
+
+.info-box .title-bar {background-color: firebrick; display: block; margin-top: 10px; padding: 10px; border-radius: 20px}
+.info-box .title{ font-size: 2.5em; text-align: center}
 .info-box .content {font-size: 1.5em; display: block; margin:20px;}
+
+#content .info-box .title-bar{background-color: firebrick; }
+#content-2 .info-box .title-bar{background-color: forestgreen; margin-bottom: 50px }
+
+.info-row{margin-bottom: 50px} 
+.info-row .fa{margin-top: 10px}
+
+.sponsor-container{margin:10px; display: inline-block; }
+.sponsor-container img{max-width: 300px}
