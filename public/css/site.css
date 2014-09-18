@@ -2,9 +2,9 @@ html{background-color: lightgray; color:black;}
 body { font-family: 'Roboto', sans-serif; font-weight: 600; font-style: normal; }
 
 #header {font-family: 'Ubuntu', sans-serif; color: lightgray}
-#header h1{font-size: 8em; text-transform: uppercase; line-height: 100px; margin-bottom: 25px;}
+#header h1{font-size: 8em; text-transform: uppercase; line-height: 1.2em; margin-bottom: 25px;}
 #header h2{font-size: 2.5em;  margin-bottom: 10px;}
-#header h3{display: inline-block; margin: 10px}
+#header h3{font-size: 1.8em; display: inline-block; margin: 10px}
 #header h3 span{margin-left: 10px}
 
 #header .jumbotron{
@@ -19,10 +19,11 @@ body { font-family: 'Roboto', sans-serif; font-weight: 600; font-style: normal; 
 
 #header {text-align: center}
 
-#mc-embedded-subscribe-form{ margin-top: 20px; }
-#mce-EMAIL{ display: inline-block; margin-right: 20px}
-#mc-embedded-subscribe i { margin-right: 10px}
-#mc-embedded-subscribe.btn {background-color: forestgreen}
+.email-form{ margin-top: 20px; }
+.email-form-desktop input{ display: inline-block; margin-right: 20px}
+.email-form i { margin-right: 10px}
+.email-form button.btn {background-color: forestgreen}
+.email-form-mobile{display: none}
 
 
 #content{ padding-top: 50px; padding-bottom: 50px; background-color: lightgray; color:black;}
@@ -50,3 +51,26 @@ body { font-family: 'Roboto', sans-serif; font-weight: 600; font-style: normal; 
 
 .sponsor-container{margin:10px; display: inline-block; }
 .sponsor-container img{max-width: 300px}
+
+@media (max-width : 768px) {
+	#header h1 {font-size: 5.5em; margin-bottom: 10px;}
+	#header h2{font-size: 2.0em;  margin-bottom: 5px;}
+	#header h3{ font-size: 1.5em; margin: 5px}
+}
+
+@media (max-width : 480px) {
+	#header h1 {font-size: 4.0em; margin-bottom: 8px;}
+	#header h2{font-size: 1.5em;  margin-bottom: 4px;}
+	#header h3{ font-size: 1.2em; margin: 3px}
+	.email-form.email-form-desktop{display: none}
+	.email-form.email-form-mobile{display: inherit;}
+	.email-form i { margin-right: 5px}
+}
+
+@media(max-width : 320px) {
+	#header h1 {font-size: 3em; margin-bottom: 5px;}
+	#header h2{font-size: 1.2em;  margin-bottom: 4px;}
+	#header h3{ font-size: 1em; margin: 3px}
+	#header .jumbotron{ padding-bottom: 10px; padding-top: 10px;}
+
+}

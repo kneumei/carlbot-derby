@@ -19,17 +19,23 @@ block content
 					.col-lg-12 
 						h2 A hackathon for robot makers in Arkansas
 				.row
-					.col-lg-4.col-lg-offset-4.col-md-6.col-md-offset-3.col-sm-8.col-sm-offset-2.col-xs-12.centered
-						form#mc-embedded-subscribe-form.validate.form(
-								action="//twitter.us9.list-manage.com/subscribe/post?u=2650d8ed002698f784a79c035&amp;id=288bef5d05"  
+					.email-form.email-form-desktop.col-lg-4.col-lg-offset-4.col-md-6.col-md-offset-3.centered
+						form.validate.form( action="//twitter.us9.list-manage.com/subscribe/post?u=2650d8ed002698f784a79c035&amp;id=288bef5d05"  
 								method="post" name="mc-embedded-subscribe-form" target="_blank" novalidate)
 							.form-group.form-inline.input-group.input-group-lg
-								input#mce-EMAIL.form-control.required(type="email" value="" name="EMAIL" 
-									placeholder="email address" required)
+								input.form-control.required(type="email" value="" name="EMAIL" placeholder="email address" required)
 								.input-group-btn
-									button#mc-embedded-subscribe.btn.btn-lg(type="submit" value="Subscribe" name="subscribe" )
+									button.btn.btn-lg(type="submit" value="Subscribe" name="subscribe" )
 										i.fa.fa-envelope.fa-lg
 										span Subscribe
+					.email-form.email-form-mobile
+						form.validate.form(
+								action="//twitter.us9.list-manage.com/subscribe/post?u=2650d8ed002698f784a79c035&amp;id=288bef5d05"  
+								method="post" name="mc-embedded-subscribe-form" target="_blank" novalidate)
+							input.form-control.required(type="email" value="" name="EMAIL" placeholder="email address" required)
+							button.btn(type="submit" value="Subscribe" name="subscribe" )
+								i.fa.fa-envelope.fa-sm
+								span Subscribe
 
 	#content
 		.container
